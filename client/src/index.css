@@ -1,0 +1,12 @@
+body {
+  background-color: red;
+  background-image: URL('https://peopledotcom.files.wordpress.com/2016/08/collector-2-600x450.jpg')
+}
+
+#sellMusic {
+  text-align: center;
+}
+
+#hello {
+width: 50px;
+}
