@@ -1,12 +1,88 @@
 body {
-  background-color: red;
-  background-image: URL('https://peopledotcom.files.wordpress.com/2016/08/collector-2-600x450.jpg')
+
+}
+
+body {
+  font: font-style font-variant font-weight font-size/line-height font-family;
+}
+
+#mainDiv {
+  text-align: center;
+  margin: 10px;
+height: 400px;
+}
+
+#midDiv {
+    background-image: URL('recordstore.v1 (1).jpg');
+height: 700px;
+  
+      /* background-image: URL('https://www.rockitrecordplayers.com.au/wp-content/uploads/2018/01/Collage-of-vinyl-record-covers.jpg'); */
+}
+
+
+#header {
+    margin-left: 10px;
+
+  display: flex;
+  justify-conent: center;
+
+}
+
+#label {
+  width:50px;
+  height:50px;
+  margin-right: 30px;
+  background-image: URL('https://assets.coingecko.com/coins/images/5233/small/recordfarm-logo.jpg')
+}
+
+#buysell{
+  display: flex;
+  justify-content: center;
+  /* background-image: URL('recordstore.v1 (1).jpg'); */
+  height: 400px;
 }
 
 #sellMusic {
-  text-align: center;
+     padding-top: 35px;
+
+  margin-right: 100px;
+      margin-top: 75px;
+
+  font-size: 50px;
+  width: 200px;
+  height: 165px;
+  background-image: URL('https://www.vinyltap.co.uk/media/wysiwyg/Orange.png')
 }
 
-#hello {
-width: 50px;
+#buyMusic {
+   padding-top: 35px;
+    margin-left: 100px;
+    margin-top: 75px;
+    font-size: 50px;
+  width: 200px;
+  height: 165px;
+  background-image: URL('https://www.vinyltap.co.uk/media/wysiwyg/Orange.png')
+
+}
+
+#top{
+margin: 30px;
+}
+
+a {
+  color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+  height: 200px;
+
+}
+
+#state{
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  border: 2px;
+  border-color: black;
 }

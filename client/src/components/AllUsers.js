@@ -5,6 +5,7 @@ import User from './User';
 
  function AllUsers(props) {
    var result = "";
+
      const getAllUsers = () => {
          console.log("getting all users")
 
@@ -15,18 +16,49 @@ import User from './User';
           props.setAllUsers()
 
 
-axios.get("/getallusers", function(req, res){
-User.find()
-.then(results  => {  
-    console.log(results)    //result = response just like in a promise
+// axios.get("/getallusers", function(req, res){
+// User.find()
+// .then(results  => {  
+//     console.log(results)    //result = response just like in a promise
     
-    res.send(results)
-})
-})
-
-
+//     res.send(results)
+// })
+// })
 
      }
+
+
+
+// class  AllUsers extends Component {
+//     state = {
+//         display: []
+//     }
+//     componentDidMount() {
+//         axios.get("/getallusers")
+//             .then(res => {
+//                 const posts = res.data
+//                 console.log(res.data)
+//                 this.setState({ display })
+//             }).catch(err => console.log(err))
+//     }
+
+
+// render(){
+
+// return (
+
+// <div id="displayUsers">
+
+//     <button onClick={this.state.posts}>Submit</button>
+
+// </div>
+
+// )
+  
+// }
+
+
+
   return (
       
     <div>
@@ -39,6 +71,6 @@ User.find()
   )
 }
 
-
-
 export default AllUsers;
+
+

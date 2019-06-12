@@ -9,6 +9,9 @@ class UserInfo extends Component {
   }
   
 
+
+
+
 getUserInfo = () => {
   console.log("state",this.state);
     console.log("props",this.props);

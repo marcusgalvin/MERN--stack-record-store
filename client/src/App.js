@@ -35,26 +35,47 @@ render(){
   return (
 
 
-<div style = {{margin: "10px", textAlign: "center"}}className="Inputs">
-    <div style ={{margin: "10px", textAlign: "center"}}className="App">
-    <h2>MAG's Records & More</h2>
+<div id ="mainDiv">
+<div id ="header">
+<div id ="label">
+</div>
+    <h2 style = {{color: "red", textAlign: "center"}}>MAG's Records & More</h2>
+    <p id ="top">About us</p>
+    <p id ="top">Hours of Operation</p>
+    <p id ="top">Gallery</p>
+    <p id ="top">Best Seller's</p>
+    <p id ="top">Contact Us</p>
+</div>
 
+<div id="midDiv">
+   
+<div id = "buysell">
+
+   <div id ="sellMusic">
     <a 
-    id ="hello"
+    className ="floating-placeholder"
     style={{margin: "10px"}}
     href ="#"
     onClick={() => this.setState({ pageView: <UserRegistration setData={this.updateData} /> })}
     >Sell Music </a>
 
-    
+    </div>
+
+    <div id ="buyMusic">
     <a
      style={{margin: "10px"}}
       href ="#"
           onClick={() => this.setState({ pageView:   < UserInfo data={this.state.data}/>  })}
       >Buy Music</a>
-<br />
+      </div>
 <br />
 
+      
+</div>
+<div id ="state">
+    {this.state.pageView}
+
+</div>
 
     <a 
     style={{margin: "10px"}}
@@ -65,14 +86,19 @@ render(){
 
 </div>
     <br />
-    {this.state.pageView}
-     
-     
-     
-  {/*data is a property (prop) name*/}
-  {/*//imported from AllUsers.js*/}
+
+
+
+<div id ="bottomDiv">
+<h2>A Simple Web App for Vinyl Enthusiasts</h2>
+<p>Designed for Purchasing and Selling Used Records, CD's, and Cassettes</p>
+
+</div>
+
 
     </div>
+
+
   
 );
 }

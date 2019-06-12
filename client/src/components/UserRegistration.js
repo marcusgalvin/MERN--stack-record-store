@@ -35,12 +35,21 @@ registerUser = () => {
 
 }
 
+
+
+
  render() {
     return (
-      <div id ="sellMusic">
+      <div
+      id ="sellDiv" 
+       style ={{margin: "10px", textAlign: "center"}}className="App"
+       >
         
 <h3>- Please Fill out the Form -</h3>
     <input
+      className ="floating-placeholder"
+id ="first"
+    style ={{color: "red"}}
     onChange={ e => this.setState({  userName: e.target.value })}
      placeholder="user name" 
      type="text" 
