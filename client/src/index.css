@@ -1,88 +1,158 @@
-body {
-
-}
-wwww
-body {
-  font: font-style font-variant font-weight font-size/line-height font-family;
-}
-
-#mainDiv {
-  text-align: center;
-  margin: 10px;
-height: 400px;
-}
-
-#midDiv {
-    background-image: URL('recordstore.v1 (1).jpg');
-height: 700px;
-  
-      /* background-image: URL('https://www.rockitrecordplayers.com.au/wp-content/uploads/2018/01/Collage-of-vinyl-record-covers.jpg'); */
-}
-
-
 #header {
-    margin-left: 10px;
-
-  display: flex;
-  justify-conent: center;
-
-}
-
-#label {
-  width:50px;
-  height:50px;
-  margin-right: 30px;
-  background-image: URL('https://assets.coingecko.com/coins/images/5233/small/recordfarm-logo.jpg')
-}
-
-#buysell{
   display: flex;
   justify-content: center;
-  /* background-image: URL('recordstore.v1 (1).jpg'); */
-  height: 400px;
+  margin-top:10px;
 }
 
-#sellMusic {
-     padding-top: 35px;
-
-  margin-right: 100px;
-      margin-top: 75px;
-
-  font-size: 50px;
-  width: 200px;
-  height: 165px;
-  background-image: URL('https://www.vinyltap.co.uk/media/wysiwyg/Orange.png')
-}
-
-#buyMusic {
-   padding-top: 35px;
-    margin-left: 100px;
-    margin-top: 75px;
-    font-size: 50px;
-  width: 200px;
-  height: 165px;
-  background-image: URL('https://www.vinyltap.co.uk/media/wysiwyg/Orange.png')
+#title {
+  /* margin-right: 50px; */
 
 }
 
-#top{
-margin: 30px;
+#icon{
+  background-image: url('https://assets.coingecko.com/coins/images/5233/small/recordfarm-logo.jpg');
+  width: 50px;
+  height: 50px;
+  float:left;
+  margin-right: 30px;
+  margin-top: -10px;
+}
+
+#state {
+  /* background-color: red; */
+  text-align: center;
+}
+
+#app1 {
+  margin-top: 100px
+}
+
+#wholeNavBar {
+  height: 25px;
+   /* background-image: url("recordstore.v1 (1).jpg"); */
+
 }
 
 a {
-  color: black;
     text-decoration: none;
+    color: black;
+    font-family: 'Nobile', sans-serif;
+    font-size: 30px;
     text-align: center;
-    width: 200px;
-  height: 200px;
+
 
 }
 
-#state{
+#line {
+  font-size: 30px;
+}
+
+
+/* ############################################### -- 'browse div' */
+
+#top3{
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#bottom3{
+  display:flex;
+  justify-content: center;
+    margin: 10px;
+
+}
+
+
+#hiphop{
+    border-radius: 50%;
+
+margin: 10px;
+/* background-image: url('http://stellinadiving.com/wp-content/uploads/2018/10/hip-hop-logo-design-hip-hop-logo-design-inspirations-graphic-design-inspiration-printable-150x150.jpg') */
+}
+
+#country{
+    border-radius: 50%;
+
+margin: 10px;
+}
+
+#rock{
+    border-radius: 50%;
+margin: 10px;
+/* background-image: url('http://cdn.shoplightspeed.com/shops/610355/files/12412715/150x150x2/red-white-blue-guitar-magnet.jpg') */
+}
+
+#pop{
+    border-radius: 50%;
+margin: 10px;
+margin-top: -10px;
+
+}
+
+#jazz{
+border-radius: 50%;
+margin: 10px;
+margin-top: -10px;
+
+
+}
+
+#reggae{
+    border-radius: 50%;
+
+margin: 10px;
+margin-top: -10px;
+
+}
+
+#message {
+  text-align:center;
+}
+
+#photo {
+  /* height: 150px;
+  width: 150px; */
+  background-image: url('')
+
+}
+
+#buyMusic {
+}
+
+#twitter {
   margin: auto;
   text-align: center;
-  width: 300px;
-  height: 150px;
-  border: 2px;
-  border-color: black;
+  width: 100px;
+  height: 100px;
+  background-image: url('http://www.professionalwireless.com/wp-content/uploads/2016/01/twitter-icon.jpg');
+  
+}
+
+#instagram {
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-image: url('http://www.yondordiamonds.com/wp-content/uploads/2016/06/Instagram-icon.png');
+  
+}
+
+#github {
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-image: url('http://gomagick.herokuapp.com/img?size=100x100&url=https://github.com/apple-touch-icon.png');
+  
+}
+
+#container {
+  display:flex;
+  text-align: auto;
+}
+
+#first {
+  width: 150px;
+  height: 50px;
 }

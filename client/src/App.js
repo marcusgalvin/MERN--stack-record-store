@@ -3,6 +3,8 @@ import AllUsers from './components/AllUsers';
 import UserInfo from './components/UserInfo';
 import UserRegistration from './components/UserRegistration';
 import User from './components/User';
+import NavBar from './components/NavBar';
+import axios from 'axios';
 
 class App extends Component {
 
@@ -16,6 +18,15 @@ state = {
 // allUsers: " "
 // pageView: " "
 // }
+
+
+
+
+
+
+
+
+
 
 
 getAllUsers = () => {
@@ -34,35 +45,33 @@ updateData = (newData) => {
 render(){
   return (
 
+<div id="app">
 
-<div id ="mainDiv">
-<div id ="header">
-<div id ="label">
-</div>
-    <h2 style = {{color: "red", textAlign: "center"}}>MAG's Records & More</h2>
-    <p id ="top">About us</p>
-    <p id ="top">Hours of Operation</p>
-    <p id ="top">Gallery</p>
-    <p id ="top">Best Seller's</p>
-    <p id ="top">Contact Us</p>
-</div>
+<div id="icon"></div>
+   <div id ="title">
+                <h2>MAG's Records & more</h2>
+        </div> 
+        
+<NavBar />
 
-<div id="midDiv">
-   
-<div id = "buysell">
 
-   <div id ="sellMusic">
+<div id ="app1">
+
+<div id="sellMusic">
     <a 
     className ="floating-placeholder"
     style={{margin: "10px"}}
     href ="#"
     onClick={() => this.setState({ pageView: <UserRegistration setData={this.updateData} /> })}
     >Sell Music </a>
+</div>
+   <br />
 
-    </div>
 
     <div id ="buyMusic">
     <a
+        className ="floating-placeholder"
+
      style={{margin: "10px"}}
       href ="#"
           onClick={() => this.setState({ pageView:   < UserInfo data={this.state.data}/>  })}
@@ -71,11 +80,6 @@ render(){
 <br />
 
       
-</div>
-<div id ="state">
-    {this.state.pageView}
-
-</div>
 
     <a 
     style={{margin: "10px"}}
@@ -83,20 +87,21 @@ render(){
                onClick={() => this.setState({ pageView:  < AllUsers setAllUsers = {this.getAllUsers} data={this.state.data} />   })}
      >Browse Entire Library</a>
 
+    {this.state.pageView}
 
-</div>
+
     <br />
 
+</div>
 
-
-<div id ="bottomDiv">
+<div id="message">
 <h2>A Simple Web App for Vinyl Enthusiasts</h2>
 <p>Designed for Purchasing and Selling Used Records, CD's, and Cassettes</p>
-
+</div>
 </div>
 
 
-    </div>
+ 
 
 
   

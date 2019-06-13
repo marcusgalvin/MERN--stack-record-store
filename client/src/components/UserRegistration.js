@@ -45,19 +45,17 @@ registerUser = () => {
        style ={{margin: "10px", textAlign: "center"}}className="App"
        >
         
-<h3>- Please Fill out the Form -</h3>
+<h3>- What Would you Like to Sell? -</h3>
     <input
       className ="floating-placeholder"
-id ="first"
-    style ={{color: "red"}}
     onChange={ e => this.setState({  userName: e.target.value })}
-     placeholder="user name" 
+     placeholder="User Name" 
      type="text" 
      />
 <br />
     <input 
     onChange= { e => this.setState({message: e.target.value })}
-    placeholder="Message" 
+    placeholder="Condition" 
     type="text" 
     />
 <br />
@@ -77,6 +75,7 @@ id ="first"
 <br />
 
     <input 
+
     onChange= { e => this.setState({productType: e.target.value })}
     placeholder="(CD, Record, or Cassette)" 
     type="text" 

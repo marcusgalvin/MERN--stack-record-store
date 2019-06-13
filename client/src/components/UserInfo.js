@@ -10,7 +10,6 @@ class UserInfo extends Component {
   
 
 
-
 getUserInfo = () => {
   console.log("state",this.state);
     console.log("props",this.props);
@@ -40,20 +39,132 @@ axios.get("/showprofile/:username", function(req, res){    //:username is a para
   render() {
     return (
       <div>
-        
+      <h2 style ={{margin: "10px", textAlign: "center"}}>- Search Our Data Base For Products -</h2>
+        <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
     <input 
     onChange = { e => this.setState({
         
           userName: e.target.value
         
       })}
-    placeholder="user name" 
+    placeholder="User Name" 
     type="text" 
     />
 
-    <button onClick={this.getUserInfo}>Get User Info</button>  {/* use bracket notation to call a button/method*/}
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
 <br />
         {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
+
+
+
+
+         <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
+    <input 
+    onChange = { e => this.setState({
+        
+          userName: e.target.value
+        
+      })}
+    placeholder="Artist Name" 
+    type="text" 
+    />
+
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
+<br />
+        {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
+
+
+
+
+         <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
+    <input 
+    onChange = { e => this.setState({
+        
+          userName: e.target.value
+        
+      })}
+    placeholder="Album Name" 
+    type="text" 
+    />
+
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
+<br />
+        {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
+
+
+
+
+
+         <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
+    <input 
+    onChange = { e => this.setState({
+        
+          userName: e.target.value
+        
+      })}
+    placeholder="CD, Record, Cassette" 
+    type="text" 
+    />
+
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
+<br />
+        {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
+
+
+
+
+
+         <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
+    <input 
+    onChange = { e => this.setState({
+        
+          userName: e.target.value
+        
+      })}
+    placeholder="Genre" 
+    type="text" 
+    />
+
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
+<br />
+        {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
+
+
+
+
+
+         <div style ={{margin: "10px", textAlign: "center"}}className="App">
+
+    <input 
+    onChange = { e => this.setState({
+        
+          userName: e.target.value
+        
+      })}
+    placeholder="Price" 
+    type="text" 
+    />
+
+    <button onClick={this.getUserInfo}>Search</button>  {/* use bracket notation to call a button/method*/}
+<br />
+        {this.state.result}    {/* all you need to display data on page + change the method getUserInfo + state*/}
+
+        </div>
       </div>
     )
   }
