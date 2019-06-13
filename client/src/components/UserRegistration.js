@@ -36,8 +36,6 @@ registerUser = () => {
 }
 
 
-
-
  render() {
     return (
       <div

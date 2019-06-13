@@ -16,30 +16,26 @@ state = {
   pageView: ""
 }
 
-getAllUsers = () => {
-  this.setState ({
-    allUsers: this.state.data
-  })
-  this.forceUpdate()
-}
+// getAllUsers = () => {
+//   this.setState ({
+//     allUsers: this.state.data
+//   })
+//   this.forceUpdate()
+// }
 
-updateData = (newData) => {
-  this.setState({
-    data: newData
-  })
-}
-
+// updateData = (newData) => {
+//   this.setState({
+//     data: newData
+//   })
+// }
 
 
   render() {
     return (
       <div id ="wholeNavBar">
 
-
-
         <div id="header">
        
-
 
         <a 
     className ="floating-placeholder"

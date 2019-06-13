@@ -5,6 +5,7 @@ import UserRegistration from './components/UserRegistration';
 import User from './components/User';
 import NavBar from './components/NavBar';
 import axios from 'axios';
+import Footer from './components/Footer';
 
 class App extends Component {
 
@@ -19,28 +20,18 @@ state = {
 // pageView: " "
 // }
 
+// getAllUsers = () => {
+//   this.setState ({
+//     allUsers: this.state.data
+//   })
+//   this.forceUpdate()
+// }
 
-
-
-
-
-
-
-
-
-
-getAllUsers = () => {
-  this.setState ({
-    allUsers: this.state.data
-  })
-  this.forceUpdate()
-}
-
-updateData = (newData) => {
-  this.setState({
-    data: newData
-  })
-}
+// updateData = (newData) => {
+//   this.setState({
+//     data: newData
+//   })
+// }
 
 render(){
   return (
@@ -48,10 +39,13 @@ render(){
 <div id="app">
 
 <div id="icon"></div>
+
    <div id ="title">
-                <h2>MAG's Records & more</h2>
-        </div> 
+        <h2>MAG's Records & more</h2>
+    </div> 
         
+
+
 <NavBar />
 
 
@@ -74,7 +68,7 @@ render(){
 
      style={{margin: "10px"}}
       href ="#"
-          onClick={() => this.setState({ pageView:   < UserInfo data={this.state.data}/>  })}
+          onClick={() => this.setState({ pageView:   <UserInfo data={this.state.data}/>  })}
       >Buy Music</a>
       </div>
 <br />
@@ -84,7 +78,7 @@ render(){
     <a 
     style={{margin: "10px"}}
      href ="#"
-               onClick={() => this.setState({ pageView:  < AllUsers setAllUsers = {this.getAllUsers} data={this.state.data} />   })}
+               onClick={() => this.setState({ pageView:  <AllUsers setAllUsers = {this.getAllUsers} data={this.state.data} />   })}
      >Browse Entire Library</a>
 
     {this.state.pageView}
@@ -98,11 +92,10 @@ render(){
 <h2>A Simple Web App for Vinyl Enthusiasts</h2>
 <p>Designed for Purchasing and Selling Used Records, CD's, and Cassettes</p>
 </div>
+
+<Footer />
+
 </div>
-
-
- 
-
 
   
 );

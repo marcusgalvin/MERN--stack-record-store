@@ -24,14 +24,14 @@ componentDidMount() {
       .then(res => {
         const allData = res.data;
         this.setState({ allData });
+        this.State = allData
         console.log(allData);
         console.log(this.state)
-        console.log()
-        console.log()
+        
       })
   }
 
-//no
+
 
 
 // constructor(props) {

@@ -29,6 +29,7 @@
 
 #wholeNavBar {
   height: 25px;
+  
    /* background-image: url("recordstore.v1 (1).jpg"); */
 
 }
@@ -125,6 +126,8 @@ margin-top: -10px;
   text-align: center;
   width: 100px;
   height: 100px;
+    float: right;
+
   background-image: url('http://www.professionalwireless.com/wp-content/uploads/2016/01/twitter-icon.jpg');
   
 }
@@ -134,6 +137,8 @@ margin-top: -10px;
   text-align: center;
   width: 100px;
   height: 100px;
+    float: right;
+
   background-image: url('http://www.yondordiamonds.com/wp-content/uploads/2016/06/Instagram-icon.png');
   
 }
@@ -143,6 +148,8 @@ margin-top: -10px;
   text-align: center;
   width: 100px;
   height: 100px;
+    float: right;
+
   background-image: url('http://gomagick.herokuapp.com/img?size=100x100&url=https://github.com/apple-touch-icon.png');
   
 }
@@ -155,4 +162,49 @@ margin-top: -10px;
 #first {
   width: 150px;
   height: 50px;
+}
+
+#footer {
+ height: 50px;
+ /* border-style: solid;
+  border-width: 2px; */
+}
+
+/* #talk {
+  float: left;
+  width: 50px;
+  height: 50px;
+  /* background-image: url('https://static.getjar.com/icon-50x50/5b/16670_thm.png') */
+/* } */ 
+
+#twitterFoot {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin:10px;
+  background-image: url('https://static.getjar.com/icon-50x50/5b/16670_thm.png')
+}
+
+#instaFoot {
+  float: right;
+  width: 50px;
+  height: 50px;
+    margin:10px;
+  background-image: url('https://static.getjar.com/icon-50x50/d3/947675_thm.png')
+}
+
+#faceFoot {
+  float: right;
+  width: 50px;
+  height: 50px;
+    margin:10px;
+
+  background-image: url('https://static.getjar.com/icon-50x50/c7/957154_thm.jpg')
+}
+
+#faceFoot {
+  float: right;
+  width: 50px;
+  height: 50px;
+  /* background-image: url('https://static.getjar.com/icon-50x50/c7/957154_thm.jpg') */
 }
