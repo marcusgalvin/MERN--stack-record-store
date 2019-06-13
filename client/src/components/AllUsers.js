@@ -27,6 +27,7 @@ componentDidMount() {
         console.log(allData);
         console.log(this.state)
         console.log()
+        console.log()
       })
   }
 
