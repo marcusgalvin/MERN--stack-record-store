@@ -26,6 +26,7 @@ componentDidMount() {
         this.setState({ allData });
         console.log(allData);
         console.log(this.state)
+        console.log()
       })
   }
 
